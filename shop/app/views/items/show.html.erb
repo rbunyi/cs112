@@ -1,0 +1,11 @@
+<div class="large-9 small-12 column">
+  <h3>
+    <%= @item.name %>
+  </h3>
+  <p class="label movie-label radius mb1">$ <%= @item.price %></p>
+ 
+  <p><%= @item.description %></p>
+</div>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
